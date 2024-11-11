@@ -5,17 +5,17 @@ package es.santander.ascender.proyecto05;
  */
 public class App {
     public static void main(String[] args) {
-        
-        final double[] arreglo = {-6, 1.3, 4.3, -5.9, 16.101};
+
+        final double[] arreglo = { -6, 1.3, 4.3, -5.9, 16.101 };
         Utilidades utilidades = new Utilidades();
 
         double mayor = utilidades.arrayValorMayor(arreglo);
-        
+
         double menor = utilidades.arrayValorMenor(arreglo);
 
         int[] arregloAleatorio = utilidades.listaNumerosRandom(7, 10);
 
-        System.out.println("El menor valor es " + menor  + " y el mayor valor es " + mayor + ".");
+        System.out.println("El menor valor es " + menor + " y el mayor valor es " + mayor + ".");
 
         utilidades.imprimirArray(arregloAleatorio);
     }
