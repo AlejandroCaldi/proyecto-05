@@ -47,10 +47,10 @@ public class Utilidades {
         return numeroRandom;
     }
 
-   public int [] listaNumerosRandom(int numeroiindice ,int entre ){
+   public int [] listaNumerosRandom(int numeroiIndice ,int entre ){
 
       
-      int [] nuevalista = new int[numeroiindice];
+      int [] nuevalista = new int[numeroiIndice];
       for (int i = 0; i < nuevalista.length; i++) {
 
         nuevalista[i] = numeroRandom(entre);
@@ -60,11 +60,22 @@ public class Utilidades {
     }
 
            
+    public void imprimirArray(int[] arrayImprimir) {
 
-    
-    
-   
-        
+        System.out.print("[");
+        for (int i = 0; i <= arrayImprimir.length - 1; i++) {
+
+            if (i < arrayImprimir.length - 1) {
+                System.out.print(arrayImprimir[i] + ",");
+            } else {
+                System.out.print(arrayImprimir[i]);
+            }
+
+        }
+        System.out.print("]");
+        System.out.println("\n");
+
+    }
     
 
 }
