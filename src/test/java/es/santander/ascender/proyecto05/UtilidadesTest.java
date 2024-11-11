@@ -26,7 +26,6 @@ public class UtilidadesTest {
     @Test
     public void testNumeroRandom(){ 
         
-        int resultadoPrueba = cut.numeroRandom(10);
         int [] teste = cut.listaNumerosRandom(5, 20);
         for (int i = 0; i < teste.length -1; i++) {
 
