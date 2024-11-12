@@ -1,5 +1,6 @@
 package es.santander.ascender.proyecto05;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -13,6 +14,7 @@ public class UtilidadesTest {
 
         final double[] paraTestear = { -6, 1.3, 4.3, -5.9, 16.101 };
         double resultadoPrueba = cut.arrayValorMayor(paraTestear);
+        assertNotNull(resultadoPrueba);
         assertTrue(resultadoPrueba == 16.101);
     }
 
@@ -20,6 +22,7 @@ public class UtilidadesTest {
     public void testArrayvalorMenor() {
         final double[] paraTestear = { -6, 1.3, 4.3, -5.9, 16.101 };
         double resultadoPrueba = cut.arrayValorMenor(paraTestear);
+        assertNotNull(resultadoPrueba);
         assertTrue(resultadoPrueba == -6);
     }
 
@@ -28,7 +31,7 @@ public class UtilidadesTest {
         int limite = -20;
         int[] teste = cut.listaNumerosRandom(5, limite);
         for (int i = 0; i < teste.length; i++) {
-
+            assertNotNull(teste);
             if (limite < 0)
 
             {
