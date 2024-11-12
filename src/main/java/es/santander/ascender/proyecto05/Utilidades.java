@@ -8,7 +8,7 @@ public class Utilidades {
 
         double mayorValor = arregloInicial[0];
 
-        for (int i = 0; i<= arregloInicial.length -1;i++) {
+        for (int i = 0; i <= arregloInicial.length - 1; i++) {
 
             if (arregloInicial[i] > mayorValor) {
 
@@ -24,7 +24,7 @@ public class Utilidades {
 
         double menorValor = arregloInicial[0];
 
-        for (int i = 0; i<= arregloInicial.length -1;i++) {
+        for (int i = 0; i <= arregloInicial.length - 1; i++) {
 
             if (arregloInicial[i] < menorValor) {
 
@@ -36,30 +36,26 @@ public class Utilidades {
         return menorValor;
     }
 
+    public int numeroRandom(int entre) {
 
+        int ran = (int) Math.random();
+        // Random rn = new Random(); // Por algún motivo esto rompe si se le pasa un entero negativo. 
+        // int numeroRandom = rn.nextInt(entre);
 
-    public   int numeroRandom(int entre) {
-
-
-        Random rn = new Random();
-        int numeroRandom = rn.nextInt(entre);
-
-        return numeroRandom;
+        return ran;
     }
 
-   public int [] listaNumerosRandom(int numeroiIndice ,int entre ){
+    public int[] listaNumerosRandom(int numeroiIndice, int entre) {
 
-      
-      int [] nuevalista = new int[numeroiIndice];
-      for (int i = 0; i < nuevalista.length; i++) {
+        int[] nuevalista = new int[numeroiIndice];
+        for (int i = 0; i < nuevalista.length; i++) {
 
-        nuevalista[i] = numeroRandom(entre);
-      }
+            nuevalista[i] = numeroRandom(entre);
+        }
 
-      return nuevalista;
+        return nuevalista;
     }
 
-           
     public void imprimirArray(int[] arrayImprimir) {
 
         System.out.print("[");
@@ -76,8 +72,5 @@ public class Utilidades {
         System.out.println("\n");
 
     }
-    
 
 }
-
-
