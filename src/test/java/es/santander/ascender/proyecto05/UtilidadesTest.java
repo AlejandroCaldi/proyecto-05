@@ -1,6 +1,6 @@
 package es.santander.ascender.proyecto05;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -27,7 +27,7 @@ public class UtilidadesTest {
     public void testNumeroRandom(){ 
         
         int [] teste = cut.listaNumerosRandom(5, 20);
-        for (int i = 0; i < teste.length -1; i++) {
+        for (int i = 0; i < teste.length; i++) {
 
            assertTrue(teste[i] > 0);
            assertTrue(teste[i] < 20);

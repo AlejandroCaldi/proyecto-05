@@ -40,7 +40,7 @@ public class Utilidades {
 
     public   int numeroRandom(int entre) {
 
-        
+
         Random rn = new Random();
         int numeroRandom = rn.nextInt(entre);
 
@@ -65,7 +65,7 @@ public class Utilidades {
         System.out.print("[");
         for (int i = 0; i <= arrayImprimir.length - 1; i++) {
 
-            if (i < arrayImprimir.length - 1) {
+            if (i < arrayImprimir.length) {
                 System.out.print(arrayImprimir[i] + ",");
             } else {
                 System.out.print(arrayImprimir[i]);
