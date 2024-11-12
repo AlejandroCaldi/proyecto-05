@@ -25,17 +25,13 @@ public class UtilidadesTest {
 
     @Test
     public void testNumeroRandom() {
-        int limite = -20;
+        int limite = 20;
         int[] teste = cut.listaNumerosRandom(5, limite);
-        for (int i = 0; i < teste.length - 1; i++) {
+        for (int i = 0; i < teste.length; i++) {
+ 
+            assertTrue(teste[i] >= 0);
+            assertTrue(teste[i] <= limite);
 
-            if (limite >= 0) {
-                assertTrue(teste[i] >= 0);
-                assertTrue(teste[i] < limite);
-            } else {
-                assertTrue(teste[i] <= 0);
-                assertTrue(teste[i] > limite);
-            }
 
         }
 

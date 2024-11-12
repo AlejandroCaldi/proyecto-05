@@ -38,9 +38,9 @@ public class Utilidades {
 
     public int numeroRandom(int entre) {
 
-        int ran = (int) Math.random();
-        // Random rn = new Random(); // Por algún motivo esto rompe si se le pasa un entero negativo. 
-        // int numeroRandom = rn.nextInt(entre);
+        entre = Math.abs(entre);  // Por algún motivo esto rompe si se le pasa un entero negativo.
+        Random rn = new Random(); 
+        int ran = rn.nextInt(entre);
 
         return ran;
     }
