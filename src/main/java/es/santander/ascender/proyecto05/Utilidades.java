@@ -66,7 +66,7 @@ public class Utilidades {
         System.out.print("[");
         for (int i = 0; i <= arrayImprimir.length - 1; i++) {
 
-            if (i < arrayImprimir.length) {
+            if (i < arrayImprimir.length -1 ) {
                 System.out.print(arrayImprimir[i] + ",");
             } else {
                 System.out.print(arrayImprimir[i]);
