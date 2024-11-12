@@ -13,7 +13,7 @@ public class App {
 
         double menor = utilidades.arrayValorMenor(arreglo);
 
-        int[] arregloAleatorio = utilidades.listaNumerosRandom(7, 10);
+        int[] arregloAleatorio = utilidades.listaNumerosRandom(7, -10);
 
         System.out.println("El menor valor es " + menor + " y el mayor valor es " + mayor + ".");
 
