@@ -33,7 +33,7 @@ public class UtilidadesTest {
 
             {
                 assertTrue(teste[i] >= limite);
-                assertTrue(teste[i]  >= 0);
+                assertTrue(teste[i]  <= 0);
 
 
             }
